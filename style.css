@@ -956,6 +956,12 @@ footer img{
     img{
         max-width: 100%;
     }
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        background-color: #3d3d3d;
+    }
 
 
     /* header */
@@ -1156,5 +1162,12 @@ footer img{
     }
     .footer-links{
         flex-direction: column;
+    }
+    .footer-inner{
+        flex-direction: column;
+    }
+    .social-icons{
+        
+        height: fit-content;
     }
 }
