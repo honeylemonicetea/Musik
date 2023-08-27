@@ -1021,27 +1021,62 @@ footer img{
     .singers-container{
         flex-direction: column;
     }
+    .singers-text{
+        width: 100%;
+    }
+    .singers-bg{
+        display: none;
+    }
 
 
 
 
 
+    /* EVENTS */
+    .events{
+        width: 100%;
+        font-size: 14px !important;
+    }
+    th, td{
+        padding: 0 !important;
+    }
+    th:first-child{
+        padding-left: 20px;
+    }
 
 
-
+    .table-bg{
+        display: none;
+    }
 
     /* TIERS */
     .plans-container{
         flex-direction: column;
     }
+    td{
+        padding: 5px;
+    }
+    .plan:not(last-child){
+        margin: 0;
+    }
+    .plans-bg{
+        display: none;
+    }
 
 
     /* SPONSORS */
     .logo-grid{
-        grid-template-columns: repeat(2,170px);
+        display: block;
         width: 100%;
-
     }
+    .logo-grid img{
+        margin: 20px 0;
+    }
+    .sponsors-bg{
+        display: none;
+    }
+
+
 
 
     /* FEEDBACK */
@@ -1066,13 +1101,60 @@ footer img{
     .testimonial-container{
         width: 100%;
         flex-direction: column;
+        /* padding: 10px; */
+        transform: translateX(0);
     }
     .testimonial{
         width: 100%;
+        position: static;
+        height: fit-content;
+        padding: 10px;
     }
+    .test-img{
+        position: static;
+        transform: translateX(0);
+        display: block;
+    }
+    .test-inact{
+        opacity: 1;
+    }
+    .testimonial:nth-child(2){
+        margin: 0;
+    }
+    .testi-bg{
+        display: none;
+    }
+
 
     /* PHOTOS */
     .photos{
         width: 100%;
+        flex-direction: column;
+        transform: translateX(0);
+    }
+    .shot{
+        width: 100%;
+    }
+    .shot-bg{
+        display: none;
+    }
+
+
+    /* feedback */
+    .feedback{
+        height: fit-content;
+    }
+    .left{
+        padding: 20px 10px;
+    }
+    .feedback-bg2{
+        display: none;
+    }
+/* FOOTER */
+    footer{
+        height: fit-content;
+    }
+    .footer-links{
+        flex-direction: column;
     }
 }
