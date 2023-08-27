@@ -1033,6 +1033,9 @@ footer img{
     .singers-bg{
         display: none;
     }
+    .singers-collage img{
+        box-shadow: none;
+    }
 
 
 
@@ -1058,6 +1061,9 @@ footer img{
     /* TIERS */
     .plans-container{
         flex-direction: column;
+    }
+    .plan{
+        box-shadow: none;
     }
     td{
         padding: 5px;
@@ -1167,7 +1173,8 @@ footer img{
         flex-direction: column;
     }
     .social-icons{
-        
+        width: 100%;
         height: fit-content;
+        justify-content: flex-start;
     }
 }
