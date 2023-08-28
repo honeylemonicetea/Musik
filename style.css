@@ -951,7 +951,7 @@ footer img{
 
 
 /* MOBILE STYLES*/
-@media(max-width: 400px){
+@media(max-width: 500px){
     /* global */
     img{
         max-width: 100%;
@@ -962,7 +962,7 @@ footer img{
     }
 
     *{
-        border: solid red 2px;
+        /* border: solid red 2px; */
         position: static !important;
         transform: translate(0);
         /* margin: 0 !important; */
