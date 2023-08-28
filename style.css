@@ -963,7 +963,7 @@ footer img{
     
     *{
         /* border: solid red 2px; */
-        position: static;
+        position: static !important;
         transform: translate(0);
         /* margin: 0 !important; */
     }
@@ -979,11 +979,12 @@ footer img{
         }
 
     .transp{
-        font-size: 7rem;
+        font-size: 5rem;
     }
 
     .banner-inner{
-        margin: 20px;
+        margin: 0px;
+        padding: 10px;
     }
         .banner-inner h1{
             font-size: 2rem; 
@@ -1002,6 +1003,7 @@ footer img{
     .time-count{
         flex-direction: column;
         width: 100%;
+        height: fit-content;
     }
     .plans-container{
         width: 100%;
@@ -1023,6 +1025,15 @@ footer img{
     /* ABOUT */
     .about-container{
         flex-direction: column;
+    }
+    .double-pic{
+        width: 100%;
+    }
+    .double-pic img{
+        width: 100%;
+    }
+    .about-text{
+        width: 100%;
     }
 
 
@@ -1059,7 +1070,10 @@ footer img{
         padding-left: 20px;
     }
 
-
+    .profile img{
+        width: 30px;
+        height: 30px;
+    }
     .table-bg{
         display: none;
     }
