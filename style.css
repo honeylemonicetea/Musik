@@ -965,7 +965,7 @@ footer img{
         /* border: solid red 2px; */
         position: static;
         transform: translate(0);
-        margin: 0 !important;
+        /* margin: 0 !important; */
     }
     /* header */
     .menu{
