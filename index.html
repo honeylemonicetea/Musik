@@ -14,11 +14,22 @@
             <nav class="menu">
                 <a href="" class="logo"><img src="img/pictures/Logo.png" alt=""></a>
                 <div class="links-container">
-                    <a href="" class="nav-link">HOME</a>
-                    <a href="" class="nav-dropdown">SPEAKERS <i class="bi bi-chevron-down"></i></a>
-                    <a href="" class="nav-dropdown">SCHEDULE <i class="bi bi-chevron-down"></i></a>
-                    <a href="" class="nav-link">CONTACT US</a>
-                    <a href="" class="nav-btn">GET TICKETS</a>
+                    <a href="#" class="nav-link">HOME</a>
+                    <div class="dropdown-wrapper">
+                        <a href="#" class="nav-dropdown">SPEAKERS <i class="bi bi-chevron-down" id="speakers-btn"></i></a>
+                        <div class="dropdown speakers-drop speakers-drop-hidden">
+                            <a href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrapper">
+                        <a href="#" class="nav-dropdown">SCHEDULE <i class="bi bi-chevron-down" id="schedule-btn"></i></a>
+                        <div class="dropdown schedule-drop schedule-drop-hidden">
+                            <a href="">Learn More</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link">CONTACT US</a>
+                    <a href="#" class="nav-btn">GET TICKETS</a>
+                    
                 </div>
             </nav>
             <section class="header-banner">
@@ -138,19 +149,19 @@
         <div class="container">
             <h1>Event Schedule</h1>
             <div class="days">
-                <div class="day">
+                <div class="day active" id="day1">
                     <h2>Day 01</h2>
                     <h3>16 August</h3>
                     <hr>
                 </div>
-                <div class="day">
-                    <h2>Day 01</h2>
-                    <h3>16 August</h3>
+                <div class="day" id="day2">
+                    <h2>Day 02</h2>
+                    <h3>17 August</h3>
                     <hr>
                 </div>
-                <div class="day">
-                    <h2>Day 01</h2>
-                    <h3>16 August</h3>
+                <div class="day" id="day3">
+                    <h2>Day 03</h2>
+                    <h3>18 August</h3>
                     <hr>
                 </div>
             </div>
@@ -447,5 +458,5 @@
         </div>
     </footer>
 </body>
-<script src="test.js"></script>
+<script src="script.js"></script>
 </html>
