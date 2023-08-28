@@ -1041,7 +1041,8 @@ footer img{
     /* SINGERS */
     .singers{
         height: fit-content;
-        display: none;
+        /* display: none; */
+        overflow-x: hidden;
     }
     .singers-container{
         flex-direction: column;
