@@ -957,10 +957,16 @@ footer img{
         max-width: 100%;
     }
     html{
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         /* border: 1px solid; */
     }
-
+    
+    *{
+        /* border: solid red 2px; */
+        position: static;
+        transform: translate(0);
+        margin: 0 !important;
+    }
     /* header */
     .menu{
         flex-direction: column;
@@ -972,6 +978,9 @@ footer img{
             margin: 10px;
         }
 
+    .transp{
+        font-size: 7rem;
+    }
 
     .banner-inner{
         margin: 20px;
