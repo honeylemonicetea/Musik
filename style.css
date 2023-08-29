@@ -778,11 +778,28 @@ h1{
     background-repeat: no-repeat;
     padding: 160px 0 240px 0;
     overflow: hidden;
+    position: relative;
 }
+
+    /* the left and the right parts will be a bit translucent */
+    .inactive-left, .inactive-right{
+        /* border: solid; */
+        width: 350px;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.839);
+        opacity: 0.9;
+        z-index: 2;
+    }
+    .inactive-right{
+        right: 0;
+    }
+    
+
 .photos{
     width: 1970px;
     display: flex;
-    transform: translateX(-5%);
+    /* transform: translateX(-5%); */
 }
 
 .shot{
@@ -791,9 +808,12 @@ h1{
     margin-right:30px;
     
 }
+
 .shot-bg{
     position: absolute;  
-    top: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
 }
 .shot-bg:first-of-type{
     left: 5%;
@@ -904,7 +924,7 @@ h1{
     }
 
 .right input::placeholder, textarea::placeholder{
-    color: black;
+    color: rgb(122, 120, 120);
 }
 
 .feedback-btn{
@@ -918,6 +938,15 @@ h1{
     color: white;
     font-weight: 700;
 
+}
+.feedback-btn:hover{
+    background-color: #8270e6;
+}
+
+
+
+input:focus{
+    border-bottom: solid #381DDB 1px;
 }
 
 .feedback-bg2{
@@ -952,6 +981,10 @@ footer img{
     display: block;
 
 }
+  .footer-inner a:hover{
+    color: grey;
+  }
+
 .footer-links{
     flex-grow: 1;
     display: flex;

@@ -83,7 +83,19 @@ testimonials.forEach((e)=>{
 let leftBtn = document.getElementById("leftBtn")
 let rightBtn = document.getElementById("rightBtn")
 let photos = document.querySelector(".photos")
+let swipedLeft = false
+let swipedRight = false
+let offset = 0
 
 leftBtn.onclick = function(){
-    photos.style.transform = "translateX(-190px)"
+    if (offset>-380){
+        offset -= 380
+        photos.style.transform = `translateX(${offset}px)`
+    }
+}
+rightBtn.onclick = function(){
+    if (offset<380){
+        offset+=380
+        photos.style.transform = `translateX(${offset}px)`
+    }
 }
