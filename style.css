@@ -369,6 +369,9 @@ h1{
     display: flex;
     width: 100%;
 }
+    .day:hover{
+        cursor: pointer;
+    }
     .day h2{
         font-size: 1.6rem;
         font-weight: 800;
@@ -714,8 +717,9 @@ h1{
         background-color: #f8f8f8;
         display: inline-block;
         position: relative;
+        z-index: 3;
     }
-    
+
     .testi-bg{
         position: absolute;
         width: 100%;

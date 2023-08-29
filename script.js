@@ -31,6 +31,59 @@ days.forEach((e)=>{
 
 function daySwitch () {
     let target = event.target.parentElement
-    target.classList.add("active")
-    console.log(target)
+    console.log(target.classList)
+    if (target.classList.contains("day")){
+        target.classList.add("active")
+        // select the rest and remove the active class
+        let inactiveDays = document.querySelectorAll(".day")
+        inactiveDays.forEach((e)=>{
+            if (e != target){
+                e.classList.remove("active")
+            }
+        })
+    }
+}
+
+
+// testimonials - click and make active, change order
+
+let testimonials = document.querySelectorAll(".testimonial")
+
+
+testimonials.forEach((e)=>{
+    e.onclick = function(e){
+        let card = e.target.parentElement.parentElement
+     
+        let cards = document.querySelectorAll(".testimonial")
+        let otherCards = []
+        cards.forEach((item)=>{
+            if (item!=card){
+                otherCards.push(item)
+            }
+        })
+        console.log(otherCards)
+        card.style.order = 2
+        card.classList.add("test-act")
+        card.classList.remove("test-inact")
+        otherCards[0].style.order = 1
+        otherCards[0].classList.remove("test-act")
+        otherCards[0].classList.add("test-inact")
+        otherCards[1].style.order = 3
+        otherCards[1].classList.remove("test-act")
+        otherCards[1].classList.add("test-inact")
+    }
+})
+
+
+
+
+
+// photo gallery
+
+let leftBtn = document.getElementById("leftBtn")
+let rightBtn = document.getElementById("rightBtn")
+let photos = document.querySelector(".photos")
+
+leftBtn.onclick = function(){
+    photos.style.transform = "translateX(-190px)"
 }
