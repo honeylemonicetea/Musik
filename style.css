@@ -10,6 +10,13 @@
     font-family: 'Raleway', sans-serif;
 
 }
+
+
+:root{
+    --accent-blue: #381DDB;
+    --hover-gray: #f1f1f1;
+    --hover-blue: #745cfb;
+}
 a{
     text-decoration: none;
 }
@@ -34,6 +41,8 @@ h1{
 .header-container{
     background-image: url(img/bg/header-bg.png);
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .menu{
@@ -51,6 +60,9 @@ h1{
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
     }
+    .menu a:hover{
+        color: var(--hover-gray);
+    }
     .links-container{
         display: flex;
         justify-content: space-between;
@@ -60,17 +72,20 @@ h1{
     .nav-btn{
         background-color: white;
         padding: 18px 34px;
-        color: #381DDB !important;
+        color: var(--accent-blue) !important;
         border-radius: 8px;
         font-weight: 700;
 
+    }
+    .nav-btn:hover{
+        background-color: var(--hover-gray);
     }
 /* DROPDOWN */
 .dropdown-wrapper{
     position: relative;
 }
 .dropdown{
-    background-color: rgba(19, 18, 18, 0.775);
+    background-color: #131212c6;
     position: absolute;
     top: 20px;
     left: 0;
@@ -121,6 +136,10 @@ h1{
             color: white;
             font-weight: bold;
         }
+        .banner-btn:hover{
+            background-color: #f37575;
+   
+        }
         .watch-span a, .watch-span img{
             vertical-align: middle;
         }
@@ -158,7 +177,7 @@ h1{
     
 }
     .purple{
-        color: #381DDB;
+        color: var(--accent-blue);
     }
  
 
@@ -190,7 +209,7 @@ h1{
         background-color: #FFEEEE;
     }
     .category-card:nth-child(3){
-        background-color: #381DDB;
+        background-color: var(--accent-blue);
         color: white;
     }
     .category-card:nth-child(4){
@@ -205,9 +224,7 @@ h1{
     .categories-bg{
         position: absolute;
         width: 100%;
-        /* height: 100%; */
         top: 240px;
- 
     }
         .categories-bg img{
             position: absolute;
@@ -258,11 +275,14 @@ h1{
         }
         .btn{
             padding: 20px 34px;
-            background-color: #381DDB;
+            background-color: var(--accent-blue);
             width: 200px;
             color: white;
             font-weight: 700;
             border-radius: 8px;
+        }
+        .btn:hover, .sponsor-btn:hover{
+            background-color: var(--hover-blue);
         }
         .btn i{
             margin-left: 12px;
@@ -333,10 +353,8 @@ h1{
     .singers-bg{
         position: absolute;
         top: 0;
-        
+        z-index: -1;
         width: 100%;
-        
-        /* border: solid; */
         height: 100%;
     }
 
@@ -396,31 +414,25 @@ h1{
     }
 
     .active h2, .active h3{
-        color: #381DDB;
+        color: var(--accent-blue);
     }
 
     .active hr{
-        border: #381DDB solid 2px;
-        background-color: #381DDB;
+        border: var(--accent-blue) solid 2px;
+        background-color: var(--accent-blue);
     }
 
-
     /* THE TABLE */
-
     .events{
-        /* border: 1px solid #E0E0E0; */
         border-radius: 24px;
         padding-bottom: 40px;
         border-collapse: collapse;
         margin-top: 40px;
-        
     }
    tbody tr{
         border: 1px solid #E0E0E0;
         
    }
-  
-
 
     /* header row */
     thead tr{
@@ -550,17 +562,15 @@ h1{
 }
     .plan{
         flex-grow: 1;
-        /* border: solid; */
         border-radius: 20px;
-        /* background-color: white; */
         background-image: linear-gradient(to bottom, black 2%,  white 2%);
         padding: 30px;
         box-shadow: 0px 0px 80px rgb(213, 213, 213);
     }
         /* variations */
         .plan:nth-child(2){
-            background-image: linear-gradient(to bottom, #381DDB 2%,  white 2%);
-            color: #381DDB;
+            background-image: linear-gradient(to bottom, var(--accent-blue) 2%,  white 2%);
+            color: var(--accent-blue);
         }
         .plan:nth-child(3){
             background-image: linear-gradient(to bottom, #FC5252 2%,  white 2%);
@@ -600,19 +610,19 @@ h1{
     .plan-btn{
         padding: 18px 34px;
         border-radius: 5px;
-        border: solid 1px #381DDB;
+        border: solid 1px var(--accent-blue);
         display: block;
         width: 162px;
         margin: auto;
         margin-top: 30px;
-        color: #381DDB;
+        color: var(--accent-blue);
         font-weight: 700;
         transition: background-color 0.8s;
     }
 
     .plan-btn:hover{
         color: white;
-        background-color: #381DDB;
+        background-color: var(--accent-blue);
     }
 
 
@@ -665,7 +675,7 @@ h1{
     display: block;
     width: 225px;
     padding: 18px 34px;
-    background-color: #381DDB;
+    background-color: var(--accent-blue);
     margin: 80px auto;
     border-radius: 8px;
     text-decoration: none;
@@ -755,7 +765,7 @@ h1{
             font-family: "Montserrat";
         }
         .test-img a{
-            color: #381DDB;
+            color: var(--accent-blue);
             
         }
 
@@ -787,7 +797,7 @@ h1{
         width: 350px;
         height: 100%;
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.839);
+        background-color: #ffffffd6;
         opacity: 0.9;
         z-index: 2;
     }
@@ -849,7 +859,7 @@ h1{
 /* FEEDBACK */
 .feedback{
     height: 100vh;
-    background-color: #381DDB;
+    background-color: var(--accent-blue);
     display: flex;
 }
 .left{
@@ -905,7 +915,7 @@ h1{
     opacity: 0.7;
 }
     .right label:last-of-type{
-        color: #381DDB;
+        color: var(--accent-blue);
         opacity: 0.7;
     }
 
@@ -919,7 +929,7 @@ h1{
     width: 100%;
 }
     .right textarea{
-        border-bottom: solid #381DDB 1px;
+        border-bottom: solid var(--accent-blue) 1px;
         resize: none;
     }
 
@@ -934,19 +944,19 @@ h1{
     display: block;
     padding: 18px 0;
     border-radius: 8px;
-    background-color: #381DDB;
+    background-color: var(--accent-blue);
     color: white;
     font-weight: 700;
 
 }
 .feedback-btn:hover{
-    background-color: #8270e6;
+    background-color: var(--hover-blue);
 }
 
 
 
 input:focus{
-    border-bottom: solid #381DDB 1px;
+    border-bottom: solid var(--accent-blue) 1px;
 }
 
 .feedback-bg2{
@@ -970,8 +980,6 @@ footer img{
     display: flex;
     flex-direction: row;   
     justify-content: space-between;
-    /* align-items: baseline; */
-    /* height: fit-content; */
 }
 
 
@@ -982,7 +990,7 @@ footer img{
 
 }
   .footer-inner a:hover{
-    color: grey;
+    color: var(--hover-gray);
   }
 
 .footer-links{
@@ -1004,6 +1012,100 @@ footer img{
     color: #FFFFFF;
     opacity: 0.3;
     padding-top: 5px;
+}
+
+
+/* tablet styles */
+@media (max-width: 800px) {
+    /* REMOVE LATEr */
+    /* *{
+        background-color: pink;
+    }
+    body{
+        border: 1px solid red;
+    } */
+
+
+
+    /* menu */
+    .menu{
+        flex-wrap: wrap
+    }
+    .links-container{
+        padding: 10px;
+        flex-grow: 1;
+    }
+
+    /* HEADER */
+    .header-container{
+        height: fit-content;
+    }
+    .time-count{
+        width: 100%;
+        flex-wrap: wrap
+    }
+
+    /* Categories */
+    .categories{
+        max-height: fit-content;
+    }
+    .categories-inner{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .category-card{
+        max-width: 40%;
+        margin: 10px;
+    }
+
+    /* singers */
+    .singers{
+        height: fit-content;
+    }
+    .singers-container{
+        flex-direction: column;
+    }
+    .singers-collage{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* PLANS */
+    .plans-container{
+        /* flex-wrap: wrap; */
+        width: 100%;
+        flex-direction: column;
+    }
+    /* SPONSORS */
+    .logo-grid{
+        grid-template-columns: repeat(2,170px);
+        width: 100%;
+    }
+
+
+
+    /* FEEDBACK */
+    .feedback{
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+     width: 100%;
+     padding: 40px;   
+    }
+    /* footer */
+    .footer-inner{
+        flex-direction: column;
+    }
+
+
+
+    
 }
 
 
@@ -1115,9 +1217,6 @@ footer img{
     }
 
 
-
-
-
     /* EVENTS */
     .events{
         width: 100%;
@@ -1167,8 +1266,6 @@ footer img{
     .sponsors-bg{
         display: none;
     }
-
-
 
 
     /* FEEDBACK */
