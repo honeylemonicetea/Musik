@@ -1025,8 +1025,6 @@ footer img{
         border: 1px solid red;
     } */
 
-
-
     /* menu */
     .menu{
         flex-wrap: wrap
@@ -1054,7 +1052,7 @@ footer img{
         padding: 10px;
     }
     .category-card{
-        max-width: 40%;
+        width: 40%;
         margin: 10px;
     }
 
@@ -1181,6 +1179,7 @@ footer img{
     }
     .category-card {
         margin: 10px;
+        width: 90%;
     }
     /* ABOUT */
     .about-container{
@@ -1212,8 +1211,14 @@ footer img{
     .singers-bg{
         display: none;
     }
+    .singers-collage{
+     /* justify-content: center; */
+     align-items: center;
+    }
     .singers-collage img{
         box-shadow: none;
+        width: 80%;
+        margin: 0 !important;
     }
 
 
@@ -1238,6 +1243,9 @@ footer img{
     }
 
     /* TIERS */
+    .tier-plans{
+        padding: 60px 0;
+    }
     .plans-container{
         flex-direction: column;
     }
@@ -1256,6 +1264,9 @@ footer img{
 
 
     /* SPONSORS */
+    .sponsors{
+        padding: 0;
+    }
     .logo-grid{
         display: block;
         width: 100%;
@@ -1316,10 +1327,15 @@ footer img{
 
 
     /* PHOTOS */
+    .best-shots{
+        padding: 10px;
+
+    }
     .photos{
         width: 100%;
         flex-direction: column;
         transform: translateX(0);
+        
     }
     .shot{
         width: 100%;
@@ -1342,11 +1358,17 @@ footer img{
 /* FOOTER */
     footer{
         height: fit-content;
+        padding: 20px;
     }
     .footer-links{
-        /* flex-direction: column; */
+        flex-direction: column;
         flex-wrap: wrap;
-        margin: 0;
+        padding: 10px;
+       font-size: 1rem;
+       width: 100%;
+    }
+    .footer-links a{
+        margin: 10px;
     }
     .footer-inner{
         flex-direction: column;
@@ -1355,6 +1377,6 @@ footer img{
         width: 100%;
         height: fit-content;
         /* justify-content: flex-start; */
-        margin: 0;
+        margin-top: 10px;
     }
 }
