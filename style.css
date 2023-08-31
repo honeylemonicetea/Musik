@@ -150,10 +150,12 @@ h1{
             font-weight: 800;
         }
         .time-count{
-            width: 1447px;
+            max-width: 1447px;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             margin: auto;
+            flex-wrap: wrap;
           
         }
 
@@ -170,7 +172,7 @@ h1{
 
 /* CATEGORIES */
 .categories{
-    max-height: 100vh;
+    min-height: 100vh;
     background-color: white;
     padding: 240px 0;
     position: relative;
@@ -182,14 +184,19 @@ h1{
  
 
     .categories-inner{
+        width: 100%;
         display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        justify-content: space-around;
+        /* align-items: ; */
 
     }
     /* CATEGORY CARDS */
     .category-card{
-        max-width: 370px;
+        max-width: 350px;
         padding: 90px 120px 36px 60px;
-        margin-right: 30px;
+        margin: 10px;
         border-radius: 24px;
 
     }
@@ -1014,6 +1021,39 @@ footer img{
     padding-top: 5px;
 }
 
+/* testimonials aligned in a column on screens under 1800px */
+
+@media (max-width: 1800px){
+      /* TESTIMONITALS */
+      .testimonial-container{
+        width: 100%;
+        flex-direction: column;
+        /* padding: 10px; */
+        transform: translateX(0);
+        align-items: center;
+    }
+    .testimonial{
+        width:90%;
+        position: static;
+        height: fit-content;
+        padding: 10px;
+        margin: 20px 0;
+    }
+    .test-img{
+        position: static;
+        transform: translateX(0);
+        display: block;
+    }
+    .test-inact{
+        opacity: 1;
+    }
+    .testimonial:nth-child(2){
+        margin: 0;
+    }
+    .testi-bg{
+        display: none;
+    }
+}
 
 /* tablet styles */
 @media (max-width: 800px) {
@@ -1040,7 +1080,7 @@ footer img{
     }
     .time-count{
         width: 100%;
-        flex-wrap: wrap
+       
     }
 
     /* Categories */
@@ -1294,35 +1334,6 @@ footer img{
     }
     .right form{
         width: 100%;
-    }
-
-
-    /* TESTIMONITALS */
-    .testimonial-container{
-        width: 100%;
-        flex-direction: column;
-        /* padding: 10px; */
-        transform: translateX(0);
-    }
-    .testimonial{
-        width: 100%;
-        position: static;
-        height: fit-content;
-        padding: 10px;
-    }
-    .test-img{
-        position: static;
-        transform: translateX(0);
-        display: block;
-    }
-    .test-inact{
-        opacity: 1;
-    }
-    .testimonial:nth-child(2){
-        margin: 0;
-    }
-    .testi-bg{
-        display: none;
     }
 
 
