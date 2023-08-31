@@ -52,9 +52,7 @@ h1{
     padding: 32px 0;
     align-items: center;
 }
-    .logo{
 
-    }
     .menu a{
         color: white;
         font-family: 'Montserrat', sans-serif;
@@ -562,7 +560,7 @@ h1{
     }
 
 .plans-container{
-    width: 1170px;
+    max-width: 1170px;
     margin: auto;
     display: flex;
     
@@ -669,7 +667,8 @@ h1{
 }
  
 .logo-grid{
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns:  repeat(4,170px);
@@ -720,9 +719,10 @@ h1{
 }
     .testimonial-container{
         display: flex;
-        width: 2370px;
+        max-width: 2370px;
+        width: 100%;
         /* overflow: hidden; */
-        transform: translateX(-13%);
+        /* transform: translateX(-13%); */
 
     }
 
@@ -814,9 +814,8 @@ h1{
     
 
 .photos{
-    width: 1970px;
+    max-width: 1970px;
     display: flex;
-    /* transform: translateX(-5%); */
 }
 
 .shot{
@@ -870,7 +869,7 @@ h1{
     display: flex;
 }
 .left{
-    width: 845px;
+    max-width: 845px;
     padding:120px 80px;
     color: white;
     position: relative;
@@ -899,7 +898,7 @@ h1{
 
 .right{
     background-color:  #F8F8F8;
-    width: 1075px;
+    max-width: 1075px;
     padding: 103px 130px;
     position: relative;
 }
