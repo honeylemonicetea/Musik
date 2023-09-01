@@ -91,15 +91,21 @@ let swipedLeft = false
 let swipedRight = false
 let offset = 0
 
+// DISABLE on smaller screens
+
 leftBtn.onclick = function () {
-    if (offset > -380) {
-        offset -= 380
-        photos.style.transform = `translateX(${offset}px)`
+    if (window.innerWidth > 1000) {
+        if (offset > -380) {
+            offset -= 380
+            photos.style.transform = `translateX(${offset}px)`
+        }
     }
 }
 rightBtn.onclick = function () {
-    if (offset < 380) {
-        offset += 380
-        photos.style.transform = `translateX(${offset}px)`
+    if (window.innerWidth > 1000) {
+        if (offset < 380) {
+            offset += 380
+            photos.style.transform = `translateX(${offset}px)`
+        }
     }
 }
